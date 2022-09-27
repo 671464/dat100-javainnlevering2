@@ -94,12 +94,16 @@ public class Matriser {
 	public static int[][] multipliser(int[][] a, int[][] b) {
 
 		// TODO
-		throw new UnsupportedOperationException("multipliser ikke implementert");
+		//throw new UnsupportedOperationException("multipliser ikke implementert");
 		
 		//fredrik
 		
 		
 		//sara
+		
+		//lage matrisen som skal være produktet
+		int[][]produkt = new int [3][3];
+		
 		
 		//antall kolonner i a og antall rader i b er nødt til å være like
 		
@@ -109,7 +113,7 @@ public class Matriser {
 //		for (int r = 0; r<tabell.length; r++ ) {
 //		
 //			//loop elements in row
-//			for (int b = 0; b < tabell[a].length; b++) {
+//			for (int k = 0; k < tabell[r].length; k++) {
 //		
 //		
 //	
