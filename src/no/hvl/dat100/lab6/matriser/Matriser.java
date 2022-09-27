@@ -5,15 +5,16 @@ public class Matriser {
 	// a)
 	public static void skrivUt(int[][] matrise) {
 		
-		// TODO
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
 		
-//		for (int[] rad: matrise) {
-//			for (int element: rad) {
-//				System.out.print(element + "\t");
-//			}
-//			System.out.println();
-//		}
+		// TODO
+//		throw new UnsupportedOperationException("skrivUt ikke implementert");
+		
+		for (int[] rad: matrise) {
+			for (int element: rad) {
+				System.out.print(element + "\t");
+			}
+			System.out.println();
+		}
 	}
 
 	// b)
