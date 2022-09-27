@@ -64,9 +64,6 @@ public class Matriser {
 
 		// TODO
 		//throw new UnsupportedOperationException("erLik ikke implementert");
-		
-		//fredrik sin side
-
 		for (int i = 0; i<a.length; i++) {
 			//loop elements in row
 			for (int j = 0; j< a[i].length; j++) {
