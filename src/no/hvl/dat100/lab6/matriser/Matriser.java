@@ -17,12 +17,21 @@ public class Matriser {
 		}
 	}
 
-	// b)
+	// b) FERDIG
 	public static String tilStreng(int[][] matrise) {
-
 		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
+//		throw new UnsupportedOperationException("tilStreng ikke implementert");
+		String tekst = "";
 		
+		for (int[] rad: matrise) {
+			for (int element: rad) {
+				tekst = tekst + element + " ";
+			}
+			tekst = tekst + "\n";
+		}
+		
+		
+			return tekst;
 	}
 
 	// c)
