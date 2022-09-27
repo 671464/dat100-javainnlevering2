@@ -22,28 +22,32 @@ public class Tabeller {
 		// TODO
 		throw new UnsupportedOperationException("tilStreng ikke implementert");
 		
+		
 	}
 
-	// c) 2/3 Fullført
+	// c) mangler metode med utvidet for-løkke
 	public static int summer(int[] tabell) {
 		int sum_tall = 0; int i = 0;
 		//sum med vanlig for løkke
-		/*
-		for (int i=0; i<tabell.length; i++ ) {
-			int tall = tabell[i];
+		
+		/*for (int j = 0; j<tabell.length; j++ ) {
+			int tall = tabell[j];
 			sum_tall = sum_tall + tall;	
-		}*/
+		}
+		*/
 		
-		//sum med while løkke
-		
-		while (i<tabell.length) {
+		//sum med while løkke		
+		/*while (i<tabell.length) {
 			int tall = tabell[i];
 			sum_tall = sum_tall+tall;
 			i++;
 			}
+		*/	
 		
-		// TODO sum med utvidet for løkke
-		
+		//sum med utvidet for løkke
+		for (int tall: tabell) {
+			sum_tall = sum_tall + tall;
+		}		
 			
 		return sum_tall;	
 		
@@ -88,26 +92,31 @@ public class Tabeller {
 		return tab;
 	}
 
-	// g) - FEIL
+	// g) - Fullført, tror ihvertfall det
 	public static boolean erSortert(int[] tabell) {
+		
+		//deklareringer av variabler
 		boolean sortert = false;
 		int pos_1; int pos_2; 
-		int i = 0; 
-		int j = 1;
+		int i = 0; int j = 1;
 		
-		//en for/while løkke som kjører tall for tall
-		//en if setning som endrer til true hvis sann for alle
-		do {
-			pos_1 = tabell[i];
-			pos_2 = tabell[j];
-			i++;
-			j++;
+		// for alle tabeller lengre enn én
+		if(tabell.length > 1) { 
+			//løkke for å sammenligne verdier plass for plass
+			do {
+				pos_1 = tabell[i];
+				pos_2 = tabell[j];
+				i++; j++;						
+				
+			} while (pos_1 < pos_2 && j < (tabell.length));
 			
-		} while (pos_1 < pos_2);
-			if (j==tabell.length) {
+			//sjekker om tabeller er sann	
+			if (j == (tabell.length) && pos_1 < pos_2) {
 				sortert = true;
-			}
-
+			}		
+		}
+		
+		else sortert = true; //tabeller kortere enn 2 vil alltid være sortert
 		
 		return sortert;
 	}
@@ -120,17 +129,18 @@ public class Tabeller {
 
 		int tab_lengde = tabell1.length + tabell2.length;
 		int [] tab = new int [tab_lengde];
-		//int t = 0;
+		int j = 0;
 		
-
+		
 		for (int i = 0; i < tab.length; i++) {
 			while(i < tabell1.length) {
 				tab[i] = tabell1[i];
 				i++;
 			}
-
-				
-			
+			while(i>= tabell1.length && i<tab.length) {
+				tab[i]= tabell2[j];
+				i++; j++;
+			}			
 			
 		}
 		
