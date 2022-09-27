@@ -120,6 +120,10 @@ public class Matriser {
 		
 		//sara
 		
+		//lage matrisen som skal være produktet
+		int[][]produkt = new int [3][3];
+		
+		
 		//antall kolonner i a og antall rader i b er nødt til å være like
 		
 		//gå rad for rad i ei løkke
@@ -128,7 +132,7 @@ public class Matriser {
 //		for (int r = 0; r<tabell.length; r++ ) {
 //		
 //			//loop elements in row
-//			for (int b = 0; b < tabell[a].length; b++) {
+//			for (int k = 0; k < tabell[r].length; k++) {
 //		
 //		
 //	
