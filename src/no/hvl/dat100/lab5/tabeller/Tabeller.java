@@ -39,21 +39,21 @@ public class Tabeller {
 		//sum med vanlig for løkke
 		for (int j = 0; j<tabell.length; j++ ) {
 			int tall = tabell[j];
-			sum_tall = sum_tall + tall;	
+			sum_tall += tall;	
 		}
 		
 		sum_tall = 0;
 		//sum med while løkke		
 		while (i<tabell.length) {
 			int tall = tabell[i];
-			sum_tall = sum_tall+tall;
+			sum_tall += tall;
 			i++;
 			}
 			
 		sum_tall = 0;
 		//sum med utvidet for løkke
 		for (int tall: tabell) {
-			sum_tall = sum_tall + tall;
+			sum_tall +=  tall;
 		}		
 			
 		return sum_tall;	
