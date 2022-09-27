@@ -32,25 +32,25 @@ public class Tabeller {
 	}
 	
 
-	// c) mangler metode med utvidet for-løkke
+	// c) FERDIG
 	public static int summer(int[] tabell) {
 		int sum_tall = 0; int i = 0;
-		//sum med vanlig for løkke
 		
-		/*for (int j = 0; j<tabell.length; j++ ) {
+		//sum med vanlig for løkke
+		for (int j = 0; j<tabell.length; j++ ) {
 			int tall = tabell[j];
 			sum_tall = sum_tall + tall;	
 		}
-		*/
 		
+		sum_tall = 0;
 		//sum med while løkke		
-		/*while (i<tabell.length) {
+		while (i<tabell.length) {
 			int tall = tabell[i];
 			sum_tall = sum_tall+tall;
 			i++;
 			}
-		*/	
-		
+			
+		sum_tall = 0;
 		//sum med utvidet for løkke
 		for (int tall: tabell) {
 			sum_tall = sum_tall + tall;
