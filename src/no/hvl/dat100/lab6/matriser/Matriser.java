@@ -140,33 +140,7 @@ public class Matriser {
 			}
 		}
 		return multitab;
-		
-		
-		
-		
-		
-		
-		
-//		//sara
-//		
-//		//lage matrisen som skal være produktet
-//		int[][]produkt = new int [3][3];
-//		
-//		
-//		//antall kolonner i a og antall rader i b er nødt til å være like
-//		
-//		//gå rad for rad i ei løkke
-//		//
-//		//loop rows
-////		for (int r = 0; r<tabell.length; r++ ) {
-////		
-////			//loop elements in row
-////			for (int k = 0; k < tabell[r].length; k++) {
-////		
-////		
-////	
-////	}
 
-}
+	}
 }
 	
