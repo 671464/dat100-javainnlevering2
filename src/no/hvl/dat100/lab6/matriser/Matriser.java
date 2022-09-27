@@ -63,11 +63,26 @@ public class Matriser {
 	public static boolean erLik(int[][] a, int[][] b) {
 
 		// TODO
-		throw new UnsupportedOperationException("erLik ikke implementert");
+		//throw new UnsupportedOperationException("erLik ikke implementert");
+		
+		//fredrik sin side
 
 		//for (int i = 0; i<a.length; i++) {
 
-		}
+		
+		//Sara sin side
+		
+//		//loop rows
+//		for (int i = 0; i<tab.length; i++ ) {
+//			//loop elements in row
+//			for (int j = 0; j< tab[i].length; j++) {
+//				System.out.print(tab[i][j]+ "          ");
+//			}
+//			System.out.println();
+//		}
+		
+	
+	}
 		
 
 	
