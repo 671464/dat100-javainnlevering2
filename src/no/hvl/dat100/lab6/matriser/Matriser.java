@@ -19,7 +19,6 @@ public class Matriser {
 
 	// b) FERDIG
 	public static String tilStreng(int[][] matrise) {
-		// TODO
 //		throw new UnsupportedOperationException("tilStreng ikke implementert");
 		String tekst = "";
 		
@@ -30,8 +29,7 @@ public class Matriser {
 			tekst = tekst + "\n";
 		}
 		
-		
-			return tekst;
+		return tekst;
 	}
 
 	// c)
