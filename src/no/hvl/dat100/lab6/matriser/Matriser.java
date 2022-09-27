@@ -91,9 +91,31 @@ public class Matriser {
 	public static int[][] multipliser(int[][] a, int[][] b) {
 
 		// TODO
-		throw new UnsupportedOperationException("multipliser ikke implementert");
+		//throw new UnsupportedOperationException("multipliser ikke implementert");
 		
 		//fredrik
+		int ant_kolonne_a = a[0].length; //a ----->
+		int ant_rekke_a   = a.length;
+		int ant_kolonne_b = b[0].length;
+		int ant_rekke_b   = b.length;
+		
+		
+		if (ant_kolonne_a != ant_kolonne_b) {
+			System.out.println("Feil");
+		}
+		
+		int[][] multitab = new int[ant_rekke_a][ant_kolonne_b]; 	// Lager en ny tabell som er har like mange rekker som lister i a, 
+																	//og kolonner som elementer i B.
+		
+		
+		
+		
+		return multitab;
+		
+		
+		
+		
+		
 		
 		
 		//sara
