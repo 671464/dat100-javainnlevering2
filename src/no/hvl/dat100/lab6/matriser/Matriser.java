@@ -93,8 +93,8 @@ public class Matriser {
 		// TODO
 		//throw new UnsupportedOperationException("multipliser ikke implementert");
 		
-		//fredrik
-		int ant_kolonne_a = a[0].length; //a ----->
+		//fredrik - https://www.javatpoint.com/java-program-to-multiply-two-matrices
+		int ant_kolonne_a = a[0].length;
 		int ant_rekke_a   = a.length;
 		int ant_kolonne_b = b[0].length;
 		int ant_rekke_b   = b.length;
@@ -107,9 +107,14 @@ public class Matriser {
 		int[][] multitab = new int[ant_rekke_a][ant_kolonne_b]; 	// Lager en ny tabell som er har like mange rekker som lister i a, 
 																	//og kolonner som elementer i B.
 		
-		
-		
-		
+		for (int i = 0; i<ant_rekke_a; i++) {
+			//loop elements in row
+			for (int j = 0; j< a[i].length; j++) {
+				for (int z = 0; z< a[i].length; z++) {
+					multitab[i][j] += a[i][z]*b[z][j];
+				}
+			}
+		}
 		return multitab;
 		
 		
@@ -118,25 +123,25 @@ public class Matriser {
 		
 		
 		
-		//sara
-		
-		//lage matrisen som skal være produktet
-		int[][]produkt = new int [3][3];
-		
-		
-		//antall kolonner i a og antall rader i b er nødt til å være like
-		
-		//gå rad for rad i ei løkke
-		//
-		//loop rows
-//		for (int r = 0; r<tabell.length; r++ ) {
+//		//sara
 //		
-//			//loop elements in row
-//			for (int k = 0; k < tabell[r].length; k++) {
+//		//lage matrisen som skal være produktet
+//		int[][]produkt = new int [3][3];
 //		
 //		
-//	
-//	}
+//		//antall kolonner i a og antall rader i b er nødt til å være like
+//		
+//		//gå rad for rad i ei løkke
+//		//
+//		//loop rows
+////		for (int r = 0; r<tabell.length; r++ ) {
+////		
+////			//loop elements in row
+////			for (int k = 0; k < tabell[r].length; k++) {
+////		
+////		
+////	
+////	}
 
 }
 }
