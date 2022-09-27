@@ -83,8 +83,32 @@ public class Matriser {
 	public static int[][] speile(int[][] matrise) {
 
 		// TODO
-		throw new UnsupportedOperationException("speile ikke implementert");
+		//throw new UnsupportedOperationException("speile ikke implementert");
 	
+		
+		// sara
+		int e = 0; int r = 0;
+		// lage ny tabell med lik størrelse
+		
+		for (int[] rad: matrise) {
+			e=0;
+			for (int element: rad) {
+				e++;
+			}
+			r++;
+		}
+		
+		int[][] speil = new int[r][e];
+		
+		for (int i = 0; i<speil.length; i++) {
+			//loop elements in row
+			for (int j = 0; j< speil[i].length; j++) {
+					speil[i][j] = matrise[j][i];
+				
+			}
+		}
+		return speil;		
+		
 	}
 
 	// f)
