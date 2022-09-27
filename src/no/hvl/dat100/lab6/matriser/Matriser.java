@@ -66,7 +66,12 @@ public class Matriser {
 
 		// TODO
 		throw new UnsupportedOperationException("erLik ikke implementert");
-	}
+
+		//for (int i = 0; i<a.length; i++) {
+
+		}
+		
+
 	
 	// e)
 	public static int[][] speile(int[][] matrise) {
