@@ -67,22 +67,18 @@ public class Matriser {
 		
 		//fredrik sin side
 
-		//for (int i = 0; i<a.length; i++) {
-
-		
-		//Sara sin side
-		
-//		//loop rows
-//		for (int i = 0; i<tab.length; i++ ) {
-//			//loop elements in row
-//			for (int j = 0; j< tab[i].length; j++) {
-//				System.out.print(tab[i][j]+ "          ");
-//			}
-//			System.out.println();
-//		}
-		
-	
+		for (int i = 0; i<a.length; i++) {
+			//loop elements in row
+			for (int j = 0; j< a[i].length; j++) {
+				if (a[i][j] != b[i][j]) {
+					return false;
+				}
+			}
+			
+		}
+		return true;
 	}
+
 		
 
 	
