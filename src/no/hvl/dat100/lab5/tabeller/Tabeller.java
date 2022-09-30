@@ -1,6 +1,6 @@
 package no.hvl.dat100.lab5.tabeller;
 
-//Innlevering FRedrik Crook og Sara Hønsi
+//Innlevering Fredrik Crook og Sara Hønsi
 public class Tabeller {
 
 	// a) - Ferdig
