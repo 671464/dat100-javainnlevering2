@@ -1,5 +1,7 @@
 package no.hvl.dat100.lab6.matriser;
 
+//Innlevering FRedrik Crook og Sara Hønsi
+
 public class Matriser {
 
 	// a)
