@@ -2,11 +2,8 @@ package no.hvl.dat100.lab5.tabeller;
 
 public class Tabeller {
 
-	// a) - fullført
+	// a) - Ferdig
 	public static void skrivUt(int[] tabell) {
-
-		// TODO
-		//throw new UnsupportedOperationException("skrivUt ikke implementert");
 		
 		System.out.print("[ ");			
 		for (int i = 0;i<tabell.length;i++) {
@@ -16,10 +13,9 @@ public class Tabeller {
 
 	}
 
-	// b)
+	// b) - Ferdig
 	public static String tilStreng(int[] tabell) {
 
-		// TODO
 		String result = "[";		
 		for (int i = 0;i<tabell.length;i++) {
 			result = result + tabell[i];
@@ -32,7 +28,7 @@ public class Tabeller {
 	}
 	
 
-	// c) FERDIG
+	// c) Ferdig
 	public static int summer(int[] tabell) {
 		int sum_tall = 0; int i = 0;
 		
@@ -62,11 +58,9 @@ public class Tabeller {
 		
 	}
 
-	// d) - Fullført
+	// d) - Ferdig
 	public static boolean finnesTall(int[] tabell, int tall) {
 
-		// TODO
-		//throw new UnsupportedOperationException("finnesTall ikke implementert");
 		int a = 0;
 		boolean funnet = false;
 		
@@ -81,7 +75,7 @@ public class Tabeller {
 		
 	}
 
-	// e) FERDIG
+	// e) Ferdig
 	public static int posisjonTall(int[] tabell, int tall) {
 
 		for (int i = 0; i < tabell.length; i++) {
@@ -92,7 +86,7 @@ public class Tabeller {
 		return -1;
 	}
 
-	// f) - Fullført
+	// f) - Ferdig
 	public static int[] reverser(int[] tabell) {
 		int[]tab = new int [tabell.length];
 		//lese en forløkke "baklengs i--;
@@ -104,7 +98,7 @@ public class Tabeller {
 		return tab;
 	}
 
-	// g) - FERDIG
+	// g) - Ferdig
 	public static boolean erSortert(int[] tabell) {
 		
 		for (int i = 0; i<tabell.length-1; i++)
@@ -116,11 +110,8 @@ public class Tabeller {
 		
 	}
 
-	// h)
+	// h) - Ferdig
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
-
-		// TODO
-		//throw new UnsupportedOperationException("settSammen ikke implementert");
 
 		int tab_lengde = tabell1.length + tabell2.length;
 
